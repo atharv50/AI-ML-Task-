@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #10120F, #263326);
+    padding: 20px;
+}
+
+.portfolio-card {
+    width: 100%;
+    max-width: 450px;
+
+    background: #1A1E18;
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+}
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #C6F135;
+
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #F1F4E8;
+}
+
+.role {
+    color: #C6F135;
+    font-weight: bold;
+    margin: 8px 0 15px;
+}
+
+#bio {
+    color: #AEB5A5;
+    line-height: 1.6;
+}
+
+section {
+    margin-top: 25px;
+}
+
+h2 {
+    color: #F1F4E8;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills span {
+    background: #2B3324;
+    color: #C6F135;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #C6F135;
+    color: #10120F;
+    transform: scale(1.05);
+}
+
+.about-section p {
+    color: #AEB5A5;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 12px 22px;
+
+    background: #C6F135;
+    color: #10120F;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #A8D42D;
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 12px;
+    color: #C6F135;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #C6F135;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #F1F4E8;
+    transform: translateY(-2px);
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 500px) {
+
+    .portfolio-card {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

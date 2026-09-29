@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Night</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 Movie Night</h1>
+        <p>Find a movie for your next movie night</p>
+        
+        <button id="darkModeButton">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+
+        <!-- Search and filter section -->
+        <section class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a movie..."
+            >
+
+            <select id="genreFilter">
+                <option value="all">All Genres</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="drama">Drama</option>
+                <option value="drama">Rom Com</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+
+        </section>
+
+        <!-- Movies will appear here -->
+        <section id="movieContainer" class="movie-container">
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
